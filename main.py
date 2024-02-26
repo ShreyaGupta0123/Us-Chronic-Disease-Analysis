@@ -31,6 +31,7 @@ figsoda_comsumption, cvd_fig, immunization_heatmap_fig, old_adult_data_fig, fig_
 # +
 # Create a Dash application
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+#app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'C:/Users/adity/OneDrive/Documents/GitHub/Us-Chronic-Disease-Analysis/assests/custom_style.css'])
 
 model = joblib.load('linear_regression_model.pkl')
 # Load and clean data
@@ -379,7 +380,7 @@ def predict(n_clicks, yearstart):  # Adjust parameters if needed
     
 # Run the application
 if __name__ == '__main__':
-    app.run_server(debug=True, port=8081)
+    app.run_server(debug=False, port=8080)
 # -
 
 
