@@ -377,10 +377,11 @@ def predict(n_clicks, yearstart):  # Adjust parameters if needed
     return ''
     
     
-    
+server = app.server
+
 # Run the application
-if __name__ == '__main__':
-    app.run_server(debug=False, port=8080)
+#if __name__ == '__main__':
+#    app.run_server(debug=False, port=8080)
 # -
 
 
