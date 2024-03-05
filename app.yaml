@@ -2,7 +2,7 @@ runtime: python39
 env: flex
 entrypoint: gunicorn -b 0.0.0.0:8080 main:server
 
-auto_scaling:
+basic_scaling:
   max_instances: 5  # Increased maximum number of instances to 5
   idle_timeout: 20m
 
